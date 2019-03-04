@@ -30,15 +30,28 @@ class App extends Component {
   
   render() {
     return (
-      
       <Router>
        <div className="App">
-          <div className="container">
+          <div className="appcontainer">
             <Header />
             <Route exact path="/" render={props => (
               <React.Fragment>
-                <Link style={linkStyle} to="/add">ADD</Link> 
-                  <Subscribers subs={this.state.subs} delSub={this.delSub}/>
+                <Link style={linkStyle} to="/add">ADD</Link>
+                <div class="row">
+                    <div  className="col-xs-12
+                                col-sm-12
+                                col-md-6
+                                col-lg-4 tableHeader">
+                        Name
+                    </div>
+                     <div  className="col-xs-12
+                                col-sm-12
+                                col-md-6
+                                col-lg-4 tableHeader">
+                        Phone
+                    </div>
+               </div>
+                <Subscribers subs={this.state.subs} delSub={this.delSub}/>
               </React.Fragment>
             )} />
             
@@ -57,14 +70,14 @@ class App extends Component {
 
 const linkStyle = {
   color: '#fff',
-  background:'rgb(109, 179, 61)',
+  background:'#72BA6F',
   textDecoration: 'none',
   padding:'10px 30px',
   display: 'block',
   width: '50px',
   textAlign: 'center',
   marginLeft: '40px',
-  marginBottom: '20px'
+  marginBottom: '30px'
 }
 
 export default App;

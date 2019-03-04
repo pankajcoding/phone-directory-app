@@ -1,11 +1,9 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <header style={headerStyle}>
-      <h1>PHONE DIRECTORY</h1>
- 
+      <h3>PHONE DIRECTORY</h3>
     </header>
   )
 }

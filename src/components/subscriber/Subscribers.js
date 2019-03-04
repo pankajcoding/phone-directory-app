@@ -1,12 +1,12 @@
 
 import React, { Component } from 'react';
-import TodoItem from './SubscriberItem';
+import SubscriberItem from './SubscriberItem';
 import PropTypes from 'prop-types';
 
 class Subscribers extends Component {
   render() {
     return this.props.subs.map((sub) => (
-      <TodoItem key={sub.id} sub={sub}  delSub={this.props.delSub}/>
+      <SubscriberItem key={sub.id} sub={sub}  delSub={this.props.delSub}/>
     ));
   }
 }

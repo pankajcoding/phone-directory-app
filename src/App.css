@@ -22,6 +22,35 @@
 .App-link {
   color: #61dafb;
 }
+.row div[class^='col-'] {
+    text-align:left;
+}
+.row {
+    width: 95%;
+    margin: auto;
+}
+.tableHeader{
+  font-weight: bold;
+  color: #9D9C9B;
+}
+fieldset {
+    border: none;
+    margin-bottom: 10px;
+    padding-left: 0;
+    margin-left: 0;
+}
+label {
+    display: block;
+    color: #5f5555;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+input[type="text"] {
+    padding: 10px 13px;
+    margin-top: 10px;
+    width: 198px;
+    border-radius: 0px;
+}
 
 @keyframes App-logo-spin {
   from {

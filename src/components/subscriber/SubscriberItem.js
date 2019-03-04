@@ -13,15 +13,31 @@ export class SubscriberItem extends Component {
   render() {
     const { id, name,phone } = this.props.sub;
     return (
-      <div style={this.getStyle()}>
-        <p>
-          { name }
-          {phone}
-            <button onClick={this.props.delSub.bind(this, id)} style={btnStyle}>DELETE</button>
-
-    </p>
-    
-      </div>
+                <React.Fragment>
+                <div className="row" style={wrapStyle}>
+                  <div  className="col-xs-12
+                                col-sm-12
+                                col-md-6
+                                col-lg-4">
+                         { name }
+                    </div>
+                     <div className="col-xs-12
+                                col-sm-12
+                                col-md-6
+                                col-lg-4">
+                        {phone}
+                         
+                    </div>
+                    <div className="col-xs-12
+                                col-sm-12
+                                col-md-6
+                                col-lg-4">
+                      
+                         <button onClick={this.props.delSub.bind(this, id)} style={btnStyle}>DELETE</button>
+                    </div>
+                    </div>
+                  </React.Fragment>
+  
     )
   }
 }
@@ -33,12 +49,19 @@ SubscriberItem.propTypes = {
 }
 
 const btnStyle = {
-  background: '#ff0000',
-  color: '#fff',
+  background: '#F18594',
+  color: 'rgb(16, 16, 16)',
   border: 'none',
-  padding: '5px 9px',
+  padding: '9px 14px',
   cursor: 'pointer',
-  float: 'right'
+  float: 'left',
+  position: 'relative',
+  top: '-8px',
+  marginLeft:'30%'
+}
+const wrapStyle = {
+  marginBottom:'10px',
+  marginTop:'10px'
 }
 
 export default SubscriberItem
