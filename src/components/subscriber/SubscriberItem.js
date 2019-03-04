@@ -17,7 +17,7 @@ export class SubscriberItem extends Component {
         <p>
           { name }
           {phone}
-            <button onClick={this.props.delSub.bind(this, id)} style={btnStyle}>x</button>
+            <button onClick={this.props.delSub.bind(this, id)} style={btnStyle}>DELETE</button>
 
     </p>
     
@@ -37,7 +37,6 @@ const btnStyle = {
   color: '#fff',
   border: 'none',
   padding: '5px 9px',
-  borderRadius: '50%',
   cursor: 'pointer',
   float: 'right'
 }
